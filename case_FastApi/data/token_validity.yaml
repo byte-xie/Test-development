@@ -1,0 +1,8 @@
+- token_type: valid
+  expected_status: 200
+
+- token_type: invalid
+  expected_status: 403
+
+- token_type: empty
+  expected_status: 401 

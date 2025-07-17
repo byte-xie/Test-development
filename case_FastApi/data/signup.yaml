@@ -1,0 +1,54 @@
+# 注册成功（唯一邮箱）
+- email: "{unique}"
+  password: test1234
+  full_name: 新用户1
+  expected_status: 200
+  expected_in_json: email
+  case_type: success
+
+# 重复注册（同一邮箱注册两次，第二次应失败）
+- email: "{unique_repeat}"
+  password: test1234
+  full_name: 新用户2
+  expected_status: 200
+  expected_in_json: email
+  case_type: repeat_first
+
+- email: "{unique_repeat}"
+  password: test1234
+  full_name: 新用户2
+  expected_status: 400
+  expected_in_json: null
+  case_type: repeat_second
+
+# 缺少邮箱
+- email: ""
+  password: test1234
+  full_name: 新用户3
+  expected_status: 422
+  expected_in_json: null
+  case_type: no_email
+
+# 缺少密码
+- email: "{unique}"
+  password: ""
+  full_name: 新用户4
+  expected_status: 422
+  expected_in_json: null
+  case_type: no_password
+
+# 非法邮箱
+- email: "notanemail"
+  password: test1234
+  full_name: 新用户5
+  expected_status: 422
+  expected_in_json: null
+  case_type: invalid_email
+
+# 弱密码
+- email: "{unique}"
+  password: "123"
+  full_name: 新用户6
+  expected_status: 422
+  expected_in_json: null
+  case_type: weak_password 

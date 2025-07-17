@@ -1,0 +1,24 @@
+- username: xiehaoliang@ks.com
+  password: xiehaoliang
+  expected_status: 200
+  expected_in_json: access_token
+
+- username: wrong@ks.com
+  password: xiehaoliang
+  expected_status: 400
+  expected_in_json: null
+
+- username: xiehaoliang@ks.com
+  password: wrongpwd
+  expected_status: 400
+  expected_in_json: null
+
+- username: ""
+  password: xiehaoliang
+  expected_status: 400
+  expected_in_json: null
+
+- username: xiehaoliang@ks.com
+  password: ""
+  expected_status: 400
+  expected_in_json: null 

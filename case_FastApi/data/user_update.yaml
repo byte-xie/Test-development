@@ -1,0 +1,17 @@
+# 超级用户更新自己
+- case_type: update_self_super
+  user_type: super
+  user_id: "{self_id}"
+  update_data:
+    full_name: "超级用户新名"
+  expected_status: 405
+  expected_in_json: null
+
+# 普通用户更新自己（应失败）
+- case_type: update_self_normal
+  user_type: normal
+  user_id: "{self_id}"
+  update_data:
+    full_name: "普通用户新名"
+  expected_status: 405
+  expected_in_json: null 

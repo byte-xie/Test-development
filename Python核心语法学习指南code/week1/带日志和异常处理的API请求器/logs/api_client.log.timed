@@ -1,0 +1,822 @@
+2025-07-12 00:50:20,507 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 1)
+2025-07-12 00:50:25,591 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1129)'))), 1/3次重试, 等待 1秒
+2025-07-12 00:50:26,599 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 2)
+2025-07-12 00:50:26,605 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402ED8AF70>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:50:28,638 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 3)
+2025-07-12 00:50:28,641 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDAD340>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:50:32,652 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 4)
+2025-07-12 00:50:32,657 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/123 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDAD6D0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:32,658 - api_client - ERROR - demo.py:108 - 无法获取用户数据
+2025-07-12 00:50:32,660 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 1)
+2025-07-12 00:50:32,661 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 1)
+2025-07-12 00:50:32,661 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 1)
+2025-07-12 00:50:32,661 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 1)
+2025-07-12 00:50:32,664 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDB9190>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:50:32,665 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDB94F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:50:32,667 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDB9BB0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:50:32,668 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDB9DF0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:50:33,674 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 2)
+2025-07-12 00:50:33,674 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 2)
+2025-07-12 00:50:33,674 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 2)
+2025-07-12 00:50:33,674 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 2)
+2025-07-12 00:50:33,677 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDBC100>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:50:33,678 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDBC4F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:50:33,681 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDBCAF0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:50:33,682 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDBCBE0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:50:35,683 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 3)
+2025-07-12 00:50:35,683 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 3)
+2025-07-12 00:50:35,683 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 3)
+2025-07-12 00:50:35,686 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDB99D0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:50:35,688 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDB9AF0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:50:35,688 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDADEE0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:50:35,699 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 3)
+2025-07-12 00:50:35,702 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDBC880>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:50:39,699 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 4)
+2025-07-12 00:50:39,699 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 4)
+2025-07-12 00:50:39,699 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 4)
+2025-07-12 00:50:39,705 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/789 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA1C0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,706 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/123 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA340>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,706 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/101 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA7F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,708 - api_client - ERROR - demo.py:93 - 获取用户 789 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002402EDCA1C0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA1C0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA1C0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,714 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 4)
+2025-07-12 00:50:39,718 - api_client - ERROR - demo.py:93 - 获取用户 123 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002402EDCA340>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA340>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA340>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,719 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/456 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCAE20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,725 - api_client - ERROR - demo.py:93 - 获取用户 101 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002402EDCA7F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA7F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCA7F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,731 - api_client - ERROR - demo.py:93 - 获取用户 456 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x000002402EDCAE20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCAE20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002402EDCAE20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:50:39,738 - api_client - INFO - demo.py:113 - 获取的用户: [789, 123, 101, 456]
+2025-07-12 00:52:49,363 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 1)
+2025-07-12 00:52:49,384 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F5BA30>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:52:50,396 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 2)
+2025-07-12 00:52:50,401 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F5BF10>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:52:52,416 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 3)
+2025-07-12 00:52:52,418 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F7A2E0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:52:56,428 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 4)
+2025-07-12 00:52:56,445 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/123 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F7A670>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:52:56,446 - api_client - ERROR - demo.py:108 - 无法获取用户数据
+2025-07-12 00:52:56,448 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 1)
+2025-07-12 00:52:56,449 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 1)
+2025-07-12 00:52:56,449 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 1)
+2025-07-12 00:52:56,450 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 1)
+2025-07-12 00:52:56,452 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F7A040>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:52:56,455 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86640>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:52:56,456 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86B80>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:52:56,458 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86E80>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 00:52:57,462 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 2)
+2025-07-12 00:52:57,462 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 2)
+2025-07-12 00:52:57,462 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 2)
+2025-07-12 00:52:57,462 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 2)
+2025-07-12 00:52:57,465 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F870D0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:52:57,467 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F876D0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:52:57,469 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F87AC0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:52:57,470 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F87D00>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 00:52:59,473 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 3)
+2025-07-12 00:52:59,473 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 3)
+2025-07-12 00:52:59,473 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 3)
+2025-07-12 00:52:59,473 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 3)
+2025-07-12 00:52:59,484 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F96160>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:52:59,485 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F87D00>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:52:59,485 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F87A00>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:52:59,485 - api_client - WARNING - demo.py:73 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F87820>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 00:53:03,499 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/456 (尝试 4)
+2025-07-12 00:53:03,499 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/789 (尝试 4)
+2025-07-12 00:53:03,499 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/123 (尝试 4)
+2025-07-12 00:53:03,499 - api_client - DEBUG - demo.py:56 - 请求: GET https://api.example.com/users/101 (尝试 4)
+2025-07-12 00:53:03,505 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/456 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F5BFD0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,505 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/789 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86D60>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,507 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/123 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86700>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,508 - api_client - ERROR - demo.py:76 - 请求失败: GET https://api.example.com/users/101 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86070>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,509 - api_client - ERROR - demo.py:93 - 获取用户 456 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000024B26F5BFD0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F5BFD0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F5BFD0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,517 - api_client - ERROR - demo.py:93 - 获取用户 789 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000024B26F86D60>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86D60>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86D60>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,524 - api_client - ERROR - demo.py:93 - 获取用户 123 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000024B26F86700>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86700>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86700>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,560 - api_client - ERROR - demo.py:93 - 获取用户 101 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000024B26F86070>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86070>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 91, in get_users
+    results[user_id] = future.result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 57, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000024B26F86070>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 00:53:03,566 - api_client - INFO - demo.py:113 - 获取的用户: [456, 789, 123, 101]
+2025-07-12 01:04:07,710 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 1)
+2025-07-12 01:04:07,739 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B9099CA30>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 01:04:08,754 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 2)
+2025-07-12 01:04:08,782 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B9099CF10>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 01:04:10,797 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 3)
+2025-07-12 01:04:10,853 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909BA2E0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 01:04:14,866 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 4)
+2025-07-12 01:04:14,872 - api_client - ERROR - demo.py:108 - 请求失败: GET https://api.example.com/users/123 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909BA670>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:14,873 - api_client - ERROR - demo.py:150 - 无法获取用户数据
+2025-07-12 01:04:14,875 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 1)
+2025-07-12 01:04:14,875 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/456 (尝试 1)
+2025-07-12 01:04:14,875 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/789 (尝试 1)
+2025-07-12 01:04:14,875 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/101 (尝试 1)
+2025-07-12 01:04:14,878 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909BA070>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 01:04:14,881 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6640>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 01:04:14,882 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C69D0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 01:04:14,884 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6E20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 1/3次重试, 等待 1秒
+2025-07-12 01:04:15,888 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/101 (尝试 2)
+2025-07-12 01:04:15,888 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 2)
+2025-07-12 01:04:15,888 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/789 (尝试 2)
+2025-07-12 01:04:15,888 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/456 (尝试 2)
+2025-07-12 01:04:15,892 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CB250>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 01:04:15,892 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CB430>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 01:04:15,894 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CB8B0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 01:04:15,896 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CBA00>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 2/3次重试, 等待 2秒
+2025-07-12 01:04:17,898 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/101 (尝试 3)
+2025-07-12 01:04:17,898 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/789 (尝试 3)
+2025-07-12 01:04:17,898 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 3)
+2025-07-12 01:04:17,898 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/456 (尝试 3)
+2025-07-12 01:04:17,903 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909D7160>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 01:04:17,903 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CB5B0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 01:04:17,905 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CB190>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 01:04:17,907 - api_client - WARNING - demo.py:105 - 请求失败: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909CB220>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)")), 3/3次重试, 等待 4秒
+2025-07-12 01:04:21,913 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/789 (尝试 4)
+2025-07-12 01:04:21,913 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/456 (尝试 4)
+2025-07-12 01:04:21,913 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/123 (尝试 4)
+2025-07-12 01:04:21,913 - api_client - DEBUG - demo.py:88 - 请求: GET https://api.example.com/users/101 (尝试 4)
+2025-07-12 01:04:21,919 - api_client - ERROR - demo.py:108 - 请求失败: GET https://api.example.com/users/789 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6280>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,919 - api_client - ERROR - demo.py:108 - 请求失败: GET https://api.example.com/users/456 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6B20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,920 - api_client - ERROR - demo.py:108 - 请求失败: GET https://api.example.com/users/123 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C61F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,921 - api_client - ERROR - demo.py:108 - 请求失败: GET https://api.example.com/users/101 - HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6100>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,921 - api_client - ERROR - demo.py:135 - 获取用户 789 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000013B909C6280>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6280>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 133, in get_users
+    results[user_id] = future.result()  # 获取请求结果
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 89, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/789 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6280>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,932 - api_client - ERROR - demo.py:135 - 获取用户 456 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000013B909C6B20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6B20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 133, in get_users
+    results[user_id] = future.result()  # 获取请求结果
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 89, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/456 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6B20>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,939 - api_client - ERROR - demo.py:135 - 获取用户 123 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000013B909C61F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C61F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 133, in get_users
+    results[user_id] = future.result()  # 获取请求结果
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 89, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/123 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C61F0>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,946 - api_client - ERROR - demo.py:135 - 获取用户 101 失败
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000013B909C6100>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6100>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 133, in get_users
+    results[user_id] = future.result()  # 获取请求结果
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 439, in result
+    return self.__get_result()
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\带日志和异常处理的API请求器\demo.py", line 89, in _request
+    response = self.session.request(
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\byte_\AppData\Local\Programs\Python\Python39\lib\site-packages\requests\adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.example.com', port=443): Max retries exceeded with url: /users/101 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000013B909C6100>: Failed to resolve 'api.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-07-12 01:04:21,953 - api_client - INFO - demo.py:155 - 获取的用户: [789, 456, 123, 101]

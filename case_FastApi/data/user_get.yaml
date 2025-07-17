@@ -1,0 +1,13 @@
+# 超级用户查自己
+- case_type: get_self_super
+  user_type: super
+  user_id: "{self_id}"
+  expected_status: 200
+  expected_in_json: email
+
+# 普通用户查他人（应失败）
+- case_type: get_other_by_normal
+  user_type: normal
+  user_id: "{other_id}"
+  expected_status: 403
+  expected_in_json: null 

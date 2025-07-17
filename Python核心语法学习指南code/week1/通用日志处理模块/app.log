@@ -1,0 +1,17 @@
+2025-07-11 23:55:33,741 - app - INFO - 高级日志模块实现.py:69 - 普通信息
+2025-07-11 23:55:33,744 - app - WARNING - 高级日志模块实现.py:70 - 警告信息
+2025-07-11 23:55:33,744 - app - ERROR - 高级日志模块实现.py:71 - 错误信息
+2025-07-11 23:55:33,744 - app - ERROR - 高级日志模块实现.py:76 - 发生异常: division by zero
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\通用日志处理模块\高级日志模块实现.py", line 74, in <module>
+    1 / 0
+ZeroDivisionError: division by zero
+2025-07-12 00:12:10,359 - app - INFO - 高级日志模块实现.py:88 - 普通信息
+2025-07-12 00:12:10,362 - app - WARNING - 高级日志模块实现.py:89 - 警告信息
+2025-07-12 00:12:10,363 - app - ERROR - 高级日志模块实现.py:90 - 错误信息
+2025-07-12 00:12:10,364 - app - ERROR - 高级日志模块实现.py:96 - 发生异常: division by zero
+Traceback (most recent call last):
+  File "F:\python_demo\com_xiehaoliang\Test-development\Python核心语法学习指南code\week1\通用日志处理模块\高级日志模块实现.py", line 94, in <module>
+    1 / 0  # 故意制造一个除零异常
+ZeroDivisionError: division by zero
+2025-07-12 00:13:26,569 - app - INFO - 日志配置类.py:55 - 应用程序启动

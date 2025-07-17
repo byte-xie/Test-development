@@ -1,0 +1,22 @@
+# 超级用户获取所有用户（默认参数）
+- case_type: list_super_default
+  user_type: super
+  params: {}
+  expected_status: 403
+  expected_in_json: null
+
+# 超级用户获取所有用户（分页参数）
+- case_type: list_super_paged
+  user_type: super
+  params:
+    skip: 1
+    limit: 2
+  expected_status: 403
+  expected_in_json: null
+
+# 普通用户获取所有用户（应失败）
+- case_type: list_normal
+  user_type: normal
+  params: {}
+  expected_status: 403
+  expected_in_json: null 
